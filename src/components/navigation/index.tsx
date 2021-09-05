@@ -1,6 +1,6 @@
 import { tw } from 'twind';
 import { useState } from 'react';
-import Button from '@/components/button';
+import { PopupButton } from '@typeform/embed-react';
 
 interface IMenuButton {
   toggleMenu: React.MouseEventHandler<HTMLButtonElement>;
@@ -14,34 +14,14 @@ type Link = {
 
 const links = [
   {
-    label: `Features`,
-    href: `/`,
-  },
-  {
-    label: `Testimonials`,
-    href: `/`,
-  },
-  {
-    label: `Pricing`,
-    href: `/`,
-  },
-  {
-    label: `Blog`,
+    label: `Beranda`,
     href: `/`,
   },
 ];
 
 const secondaryLinks = [
   {
-    label: `Contact sales`,
-    href: `/`,
-  },
-  {
-    label: `Log in`,
-    href: `/`,
-  },
-  {
-    label: `Get Started`,
+    label: `Beranda`,
     href: `/`,
   },
 ];
@@ -138,9 +118,13 @@ const Navigation = () => {
           </div>
           <div className={tw(`hidden md:block`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
-              <Button modifier="border-0 mr-2">Contact sales</Button>
-              <Button modifier="border-0 mr-2">Log in</Button>
-              <Button primary>Get started</Button>
+              <PopupButton
+                id="EIfs6cUG"
+                style={{ fontSize: 20 }}
+                className={tw(`font-sans font-medium py-2 px-4 border rounded`)}
+              >
+                Buat Media
+              </PopupButton>
             </div>
           </div>
           <div className={tw(`-mr-2 flex md:hidden`)}>
