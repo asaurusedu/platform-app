@@ -56,7 +56,7 @@ const PricingTable = () => (
         >
           <p className={tw(`text-lg font-medium text-gray-800`)}>Dapatkan segera!</p>
           <div className={tw(`my-4 flex items-center justify-center text-6xl leading-none font-bold text-gray-800`)}>
-            300K/bulan
+            30K/media
           </div>
           <Button primary modifier="mt-6">
             Hubungi Kami
